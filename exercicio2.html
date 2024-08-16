@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisão</title>
+
+    <script>
+
+    var n1 = +prompt("Valor do número 1: ");
+    var n2 = +prompt("Valor do número 2: ");
+
+    var divisão = n1/n2;
+
+    document.write("Divisão: " + divisão + "<br>"); // Vai printar o valor padrão, ou seja, pode ser que tenha muitas casas após a vírgula.
+    document.write("Divisão arredondada: " + Math.round(divisão) + "<br>"); // O Math.round faz um arredondamento do número, ou seja, só o primeiro valor antes da vírgula.
+    document.write("Divisão com duas casas após a vírgula: " + divisão.toFixed(2)); // o toFixed(2), vai printar duas casas após a vírgula, podendo variar dependendo do valor dentro do parênteses.
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

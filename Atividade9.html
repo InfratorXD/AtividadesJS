@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+
+    <script>
+        alert("Calculadora de IMC");
+
+        var nome = prompt("Digite seu nome: ");
+        var peso = +prompt("Digite seu peso: ");
+        var altura = +prompt("Digite sua altura: ");
+
+        var IMC = (peso/altura)/altura;
+        
+
+        if(IMC < 16){
+            document.write("Nome: " + nome + "<br>");
+            document.write("Seu IMC é " + IMC.toFixed(2) + "<br>");
+            document.write("Magreza grave.");
+        }
+        
+        
+        else if(IMC >= 16 && IMC < 17){
+             document.write("Nome: " + nome + "<br>");
+             document.write("Seu IMC é " + IMC.toFixed(2) + "<br>");
+             document.write("Magreza moderada.");
+         }
+      
+        else if(IMC >= 17 && IMC < 18.5){
+            document.write("Nome: " + nome + "<br>");
+            document.write("Seu IMC é " + IMC.toFixed(2) + "<br>");
+            document.write("Magreza leve.");
+        }
+      
+        else if(IMC >= 18.5 && IMC < 25){
+            document.write("Nome: " + nome + "<br>");
+            document.write("Seu IMC é " + IMC.toFixed(2) + "<br>");
+            document.write("Saudável.");
+        }
+        
+        else if(IMC >= 25 && IMC < 30){
+            document.write("Nome: " + nome + "<br>");
+            document.write("Seu IMC é " + IMC.toFixed(2) + "<br>");
+            document.write("Sobrepeso.");
+        }
+
+        else if(IMC >= 30 && IMC < 35){
+            document.write("Nome: " + nome + "<br>");
+            document.write("Seu IMC é " + IMC.toFixed(2) + "<br>");
+            document.write("Obesidade grau 1.");
+        }
+     
+        else if(IMC >= 35 && IMC < 40){
+            document.write("Nome: " + nome + "<br>");
+            document.write("Seu IMC é " + IMC.toFixed(2) + "<br>");
+            document.write("Obesidade grau 2.");
+        }
+
+        else{
+            document.write("Nome: " + nome + "<br>");
+            document.write("Seu IMC é " + IMC.toFixed(2) + "<br>");
+            document.write("Obesidade grau 3.");
+        }
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

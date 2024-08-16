@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 8</title>
+
+    <script>
+
+        alert("Programa Solidário, faça a sua doação!");
+        alert("Digite 1 para doar 10,00 R$");
+        alert("Digite 2 para doar 25,00 R$");
+        alert("Digite 3 para doar 50,00 R$");
+        alert("Digite 4 para doar outros valores");
+        alert("Digite 5 para cancelar");
+        var numero = +prompt("Digite o número escolhido: ");
+
+        switch(numero){
+            case 1:
+                document.write("Valor doado: 10 R$" + "<br>");
+                document.write("Muito obrigado pela sua doação!");
+            break;
+            case 2:
+                document.write("Valor doado: 25 R$" + "<br>");
+                document.write("Muito obrigado pela sua doação!");
+            break;
+            case 3:
+                document.write("Valor doado: 50 R$" + "<br>");
+                document.write("Muito obrigado pela sua doação!");
+            break;
+            case 4:
+                var valor_diferente = +prompt("Digite o valor: ");
+                document.write("Valor doado: " + valor_diferente + "R$" + "<br>");
+                document.write("Muito obrigado pela sua doação!");
+            break;
+            case 5:
+                document.write("Cancelando...");
+                break;
+
+        }
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

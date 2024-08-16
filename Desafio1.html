@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+
+    <script>
+    
+    var a = +prompt("Digite o valor de A: ");
+    var b = +prompt("Digite o valor de B: ");
+    var c = +prompt("Digite o valor de C: ");
+
+    var triangulo = (a+b) && (a+c) && (b+c);
+
+    if(triangulo = (a+b)>c && (a+c)>b && (b+c)>a){
+        document.write("Os valores inseridos formam um triângulo." + "<br>");
+
+        if((a == b) && (a == c) && (b == c)){
+             document.write("Este triângulo é um Equilátero, pois tem todos os lados iguais." + "<br>");
+         }
+
+         if((a != b) && (a != c) && (b != c)){
+             document.write("Este triângulo é um Escaleno, pois todos os lados são diferentes." + "<br>");
+         }
+
+         if((a == b) && (a != c) || (a == c) && (a != b) || (b == c) && (b != a)){
+             document.write("Este triângulo é um Isósceles, pois dois lados são iguais." + "<br>");
+         }
+    }
+
+    else{
+        document.write("Os valores inseridos não formam um triângulo.");
+    }
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

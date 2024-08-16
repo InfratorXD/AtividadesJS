@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+
+    <script>
+        alert("Analisador de atleta!");
+        var nome = prompt("Digite o nome do atleta: ");
+        var idade = +prompt("Digite a idade do atleta: ");
+        var categoria;
+
+        switch (idade){
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+                categoria = "Infantil";
+            break;
+            case 11:
+            case 12:
+            case 13:
+            case 14:
+            case 15:
+                categoria = "Juvenil";
+            break;
+            default:
+                categoria = "Categoria invalida!";
+            
+            
+        }
+        document.write("Nome do atleta: " + nome + "<br>");
+        document.write("Categoria do atleta: " + categoria + "<br>");
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

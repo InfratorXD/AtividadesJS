@@ -1,0 +1,44 @@
+
+        var I = +prompt("Digite o valor de I: ");
+        var n1 = +prompt("Digite o valor de n1: ");
+        var n2 = +prompt("Digite o valor de n2: ");
+        var n3 = +prompt("Digite o valor de n3: ");
+
+        switch(I){
+            case 1:
+           
+            var numero = [n1,n2,n3];
+
+            numero.sort((a,b) => {return a-b}); // Função .sort: coloca os elementos de uma Array em ordem crescente ou decrescente, seguindo o padrão variavel.sort((a,b) => a-b) para CRESCENTE.
+            document.write(`Valores em ordem crescente: ${numero.join(" ")}`); //Função .join: faz uma concatenação dos elementos de uma Array em uma única string, seu padrão é variavel.join(" ");
+
+            //Eu coloquei {return a-b}, porém poderia ter colocado também apenas => a - b
+            //Na função Join, dei um espaço entre as aspas, ou seja, na hora de printar os elementos vão sair separados por um espaço, se eu não colocasse um espaço ali entre as aspas, os elementos seriam separados por vírgula.
+            break;
+
+            case 2:
+            
+            var numero = [n1,n2,n3];
+
+            numero.sort((a,b)=> b-a); //Mesma função, mais aqui eu coloquei b - a, transformando em ordem DECRESCENTE. 
+            document.write("Valores em ordem decrescente: " + numero.join(" "));
+            break;
+
+            case 3:
+            if(n1 > n2 && n1 > n3){
+                document.write("Valores: " + n2 + " " + n1 + " " + n3);
+            }
+
+            else if(n2 > n1 && n2 > n3){
+                document.write("Valores: " + n1 + " " + n2 + " " + n3);
+            }
+
+            else if(n3 > n1 && n3 > n2){
+                document.write("Valores: " + n2 + " " + n3 + " " + n1);
+            }
+            break;
+
+            default:
+                document.write("Escolha o valor do I sendo de 1 a 3 para que o programa funcione.");
+                break;
+        }
