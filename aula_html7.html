@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de aluno</title>
+
+    <script>
+
+    alert("Analisador de média dos alunos!");
+
+    var nome_aluno;
+    var contador = 1;
+
+    while(contador <= 5){
+        nome_aluno = prompt("Digite o nome do aluno: ");
+            var nota1 = +prompt("Digite a nota da prova 1: ");
+            var nota2 = +prompt("Digite a nota da prova 2: ");
+            var nota3 = +prompt("Digite a nota da prova 3: ");
+        var media = (nota1 + nota2 + nota3)/3;
+        document.write("A média das 3 provas do aluno(a) " + nome_aluno + " foram: " + media.toFixed(1) + "<br>");
+        document.write("<br>");
+        contador = contador + 1;
+    }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

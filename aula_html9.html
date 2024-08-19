@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+
+    <script>
+
+    var numero_dado;
+    var contador = 1;
+
+    alert("Tabuada!!");
+
+    numero_dado = +prompt("Digite o número: ");
+
+    do{ //lista de comandos
+        var calculo = contador * numero_dado;
+            document.write(numero_dado + " X " + contador + " = " + calculo + "<br>");
+                contador = contador + 1;
+    }while(contador <= 10); //condição
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
