@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de número primo</title>
+    <h1>Verificador de número primo</h1>
+</head>
+<body>
+    <script>
+
+    var Vezes = +prompt("Digite o número de vezes dos cálculos: ");
+
+    for(i = 0; i < Vezes;i++){
+        var NumeroDigitado = +prompt("Digite o número: ");
+
+        if(NumeroDigitado == 2){
+            document.write("O número 2 é primo.<br>")
+        }
+
+        else if(NumeroDigitado%2 == 0){
+            document.write("O número " + NumeroDigitado + " não é primo.<br>");
+        }
+
+        else if(NumeroDigitado%2 != 0){
+            document.write("O número " + NumeroDigitado + " é primo.<br>");
+        }
+    }
+
+    </script>
+
+</body>
+</html>

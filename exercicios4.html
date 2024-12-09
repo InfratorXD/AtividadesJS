@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de senha</title>
+</head>
+<body>
+
+    <script>
+
+        var SenhaCorreta = 2023;
+
+        for(var DigiteSenha; DigiteSenha != SenhaCorreta; ){
+            DigiteSenha = +prompt("Digite a senha: (4 dígitos)");
+
+            if(DigiteSenha != SenhaCorreta){
+                alert("Senha inválida, tente novamente!");
+            }
+
+            else{
+                alert("Senha válida!");
+            }
+
+        }
+
+        document.write("Acesso permitido!");
+
+    </script>
+    
+</body>
+</html>
