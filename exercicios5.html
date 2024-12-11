@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto cartesiano</title>
+</head>
+<body>
+
+    <script>
+    
+    var ValorNulo = 0;
+    var CordX = 1;
+    var CordY = 1;
+
+    for(CordX,CordY; CordX && CordY != ValorNulo ;){ // O código vai continuar rodando, enquanto ele for verdadeiro, a condição de parada, que é a segunda parte do for, diz o seguinte:
+                                                     // X e Y são diferentes de 0, é uma condição verdadeira, pois foi definido como 1, caso eu coloque o valor como zero, a condiçaõ será falsa, e o código vai ser encerrado, para o  for continuar rodando, ele precisa que a condiçaõ seja verdadeira, caso seja falso, ele vai se encerrar.
+        CordX = +prompt("Digite o valor do X: ");
+        CordY = +prompt("Digite o valor do Y: ");
+
+        if(CordX > 0 && CordY > 0){
+        alert(`Os valores de X e Y, (${CordX},${CordY}) estão no primeiro quadrante`);
+        }
+
+        else if(CordX < 0 && CordY > 0){
+        alert(`Os valores de X e Y, (${CordX},${CordY}) estão no segundo quadrante`);
+        }
+
+        else if(CordX < 0 && CordY < 0){
+        alert(`Os valores de X e Y, (${CordX},${CordY}) estão no terceiro quadrante`);
+        }
+
+        else if(CordX > 0 && CordY < 0){
+        alert(`Os valores de X e Y, (${CordX},${CordY}) estão no quarto quadrante`);
+        }
+
+    }
+
+    document.write("Algoritmo interrompido!!");
+
+    </script>
+    
+</body>
+</html>
