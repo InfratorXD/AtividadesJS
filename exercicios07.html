@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando salário</title>
+</head>
+<body>
+
+    <script>
+
+        alert("Cálculo de salário de 2018 a 2023");
+
+        var Salário = +prompt("Digite o seu salário de quando você foi contratado: ");
+        var Salário1;
+
+        document.write("Seu salário em 2018: R$ " + Salário + "<br>");
+
+        Salário1 = Salário;
+        Salário = Salário*0.015;
+        Salário = Salário1 + Salário;
+        
+        document.write("Seu salário em 2019: R$ " + Math.round(Salário)  + "<br>"); //Math.round: deixa o primeiro valor antes da vírgula
+
+        Salário1 = Salário;
+        Salário = Salário*0.03;
+        Salário = Salário1 + Salário;
+
+        document.write("Seu salário em 2020: R$ " + Math.round(Salário)  + "<br>");
+
+        Salário1 = Salário;
+        Salário = Salário*0.045;
+        Salário = Salário1 + Salário;
+
+        document.write("Seu salário em 2021: R$ " + Math.round(Salário)  + "<br>");
+
+        Salário1 = Salário;
+        Salário = Salário*0.06;
+        Salário = Salário1 + Salário;
+
+        document.write("Seu salário em 2022: R$ " + Math.round(Salário)  + "<br>");
+
+        Salário1 = Salário;
+        Salário = Salário*0.075;
+        Salário = Salário1 + Salário;
+
+        document.write("Seu salário em 2023: R$ " + Math.round(Salário)  + "<br>");
+
+    </script>
+
+    
+</body>
+</html>

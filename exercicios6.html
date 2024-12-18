@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback dos Produtos</title>
+</head>
+<body>
+
+    <script>
+    
+    var Clientes;
+    var Produtos;
+    var ProdutoA = 0;
+    var ProdutoB = 0;
+    var ProdutoC = 0;
+
+    alert("1.Produto A / 2.Produto B / 3.Produto C / 4.Fim");
+
+    for(Clientes = 1;Produtos != 4; Clientes++){
+
+        Produtos = +prompt("Olá, Cliente " + Clientes + ", qual produto você deseja comprar? ");
+
+        if(Produtos == 1){
+            ProdutoA++;
+        }
+
+        if(Produtos == 2){
+            ProdutoB++;
+        }
+
+        if(Produtos == 3){
+            ProdutoC++;
+        }
+
+        if(Produtos > 4){
+            alert("Produto não encontrado");
+        }
+    }
+
+    document.write("Muito obrigado por comprar os nossos produtos!" + "<br>");
+    document.write("Produto A foi comprado por " + ProdutoA + " clientes" + "<br>");
+    document.write("Produto B foi comprado por " + ProdutoB + " clientes" + "<br>");
+    document.write("Produto C foi comprado por " + ProdutoC + " clientes" + "<br>");
+
+    </script>
+    
+</body>
+</html>
